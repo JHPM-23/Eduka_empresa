@@ -1,0 +1,138 @@
+/*Configurações gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: black;
+}
+
+header{
+    background-color: blue;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    margin-top: 10px;
+}
+nav a{
+    color: aqua;
+    text-decoration: none;
+    margin: 0 15px;
+}
+ /* Conteúdo principal: (main, section e aside)*/
+ main{
+    width: 80%;
+    margin: 30px auto;
+ }
+ section{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px; /*cria um espaço antes de começar o conteúdo lateral (aside)*/
+ }
+ article{
+    background-color: #f9fafb;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid #1e3a8a;
+ }
+ aside{
+    background-color:antiquewhite;
+    padding: 20px;
+ }
+ footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+ }
+ .logo{
+    width: 280px;
+    height: 290px;
+}
+/* ===== TABELAS (sobre.html) ===== */
+.tabela-equipe {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.tabela-equipe th {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+}
+.tabela-equipe td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.tabela-equipe tr:nth-child(even) {
+    background-color: #f0f4ff;
+}
+.tabela-equipe tr:hover {
+    background-color: #dce6ff;
+}
+ 
+/* ===== FORMULÁRIO (contato.html) ===== */
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+.formulario-contato label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+    color: #1e3a8a;
+}
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f9fafb;
+    box-sizing: border-box;
+}
+.formulario-contato textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.formulario-contato input:focus,
+.formulario-contato select:focus,
+.formulario-contato textarea:focus {
+    outline: 2px solid #1e3a8a;
+    background-color: #fff;
+}
+.btn-enviar {
+    background-color: blue;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.btn-enviar:hover {
+    background-color: #1e3a8a;
+}
+ 
+/* ===== SEÇÃO DE IMAGEM / BANNER ===== */
+.img-sobre {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 15px;
+}
